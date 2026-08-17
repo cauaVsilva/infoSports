@@ -1,7 +1,6 @@
 html {
     height: 100%;
     margin-bottom: 0%;
-    display:grid
 }
 header {
     background-color: rgb(88, 104, 197);
@@ -118,4 +117,35 @@ p.paragrafo2 {
     text-align: start;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+/*header responsivo*/
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+}
+
+/*responsividade para dispositivos móveis*/
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nag {
+        height: auto;
+    }
+
+    img.boxes {
+        width: 100%;
+        height: auto;
+    }
+
+    div#bida {
+        width: 100%;
+        padding: 10px;
+    }
 }

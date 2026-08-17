@@ -19,9 +19,34 @@ body {
     display: flex;
     flex-direction: column;
 }
-ul {
+
+.barra-topo {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
 }
+
+.menu-logo,
+.menu-botoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-botoes a {
+    text-decoration: none;
+    color: black;
+    background-color: lavender;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
@@ -111,11 +136,33 @@ div#bida {
     padding-top: 15px;
 }
 img.boxes {
-    width: 97%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 p.paragrafo2 {
     text-align: start;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+/*responsividade para dispositivos móveis*/
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nag {
+        height: auto;
+    }
+
+    img.boxes {
+        width: 100%;
+        height: auto;
+    }
+
+    div#bida {
+        width: 100%;
+        padding: 10px;
+    }
 }
